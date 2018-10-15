@@ -52,6 +52,9 @@
               <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
@@ -403,42 +406,57 @@
     
       </div>
       <!--Grid row-->
-    
+ 
+      <hr class="my-5">
+
     </section>
-    <!--Section: Examples-->
-
-    <!--hr class="my-5">
-
-    <Section: Gallery>
-    <section id="gallery" class="py-5">
+    <!--Section: Gallery-->
+    <section id="gallery" class="text-center py-5">
     
-      <h2 class="mb-5 font-weight-bold text-center">Gallery heading</h2>
+      <!-- Heading -->
+      <h2 class="mb-5 font-weight-bold text-center">Gallery</h2>
     
+      <!--Grid row-->
       <div class="row">
-    
+      
+        <!--Grid column-->
         <div class="col-md-6 mb-4">
-        
+      
+          <!--Carousel Wrapper-->
           <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+            <!--Indicators-->
             <ol class="carousel-indicators">
               <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
               <li data-target="#carousel-example-1z" data-slide-to="1"></li>
               <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+              <li data-target="#carousel-example-1z" data-slide-to="3"></li>
             </ol>
-
+            <!--/.Indicators-->
+            <!--Slides-->
             <div class="carousel-inner" role="listbox">
+              <!--First slide-->
               <div class="carousel-item active">
-                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" alt="First slide">
+                <img class="d-block w-100" src="./img/babycharacter.png" alt="First slide">
               </div>
-
+              <!--/First slide-->
+              <!--Second slide-->
               <div class="carousel-item">
-                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg" alt="Second slide">
+                <img class="d-block w-100" src="./img/home.png" alt="Second slide">
               </div>
-
+              <!--/Second slide-->
+              <!--Third slide-->
               <div class="carousel-item">
-                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg" alt="Third slide">
+                <img class="d-block w-100" src="./img/reach.png" alt="Third slide">
               </div>
+              <!--/Third slide-->
+              <!--Fourth slide-->
+              <div class="carousel-item">
+                  <img class="d-block w-100" src="./img/urban.png" alt="Fourth slide">
+                </div>
+                <!--/Fourth slide-->
             </div>
-
+            <!--/.Slides-->
+            <!--Controls-->
             <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
@@ -447,14 +465,19 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
+            <!--/.Controls-->
           </div>
-
+          <!--/.Carousel Wrapper-->
+      
         </div>
-
+        <!--Grid column-->
+        
+        <!--Grid column-->
         <div class="col-md-6">
         
+          <!--Excerpt-->
           <a href="" class="teal-text">
-            <h6 class="pb-1"><i class="fa fa-heart"></i><strong> Lifestyle </strong></h6>
+            <h6 class="pb-1"><i class="fa fa-heart"></i><strong> Passion </strong></h6>
           </a>
           <h4 class="mb-3"><strong>This is title of the news</strong></h4>
           <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
@@ -464,28 +487,29 @@
           <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
             placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut officiis
             debitis aut rerum.</p>
-          <p>by <a><strong>Jessica Clark</strong></a>, 26/08/2016</p>
-          <a class="btn btn-primary btn-md">Read more</a>
+          <p>by<strong>&nbsp;Tony Lockhart</strong></p>
+          <!--a class="btn btn-primary btn-md">Read more</a-->
         
         </div>
-    
+        <!--Grid column-->
+      
       </div>
-
-    
-    </section>
-    Section: Gallery-->
-
-    <hr class="my-5">
-
-    <!--Section: contact-->
-<section id="contact" class="py-5">
-
-  <div class="container">
-
-      <!-- Section heading -->
-      <h2 class="h1-responsive font-weight-bold text-center mb-5">Contact me</h2>
-      <!-- Section description -->
-      <p class="text-center w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.</p>
+      <!--Grid row-->
+      
+      </section>
+      <!--Section: Gallery-->
+      
+      <hr class="my-5">
+      
+      <!--Section: contact-->
+      <section id="contact" class="py-5">
+      
+        <div class="container">
+      
+          <!-- Section heading -->
+          <h2 class="h1-responsive font-weight-bold text-center mb-5">Contact me</h2>
+          <!-- Section description -->
+          <p class="text-center w-responsive mx-auto mb-5">If you want to collaborate on a project, or need technical assistance to get you ideas off the ground, contact me.</p>
 
       <!-- Grid row -->
       <div class="row">
@@ -728,6 +752,12 @@
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Carousel options -->
+<script>
+    $('.carousel').carousel({
+      interval: 3000,
+    })
+  </script>
    <!-- Custom JavaScript -->
    <script type="text/javascript" src="js/nav.js"></script>
   
