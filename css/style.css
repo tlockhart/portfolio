@@ -5,25 +5,32 @@ header,
     height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #intro {
-    /*background: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full%20page/img%20%283%29.jpg")*/
-    background: url("../img/AtlantaNight.jpg")
-    no-repeat center center fixed;
+    background: url("../img/AtlantaNight.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
+
+#profile-pic {
+  border-radius: 50%;
+}
+
 .top-nav-collapse {
-  background-color: #24355C;
-}
-@media (max-width: 768px) {
-  .navbar:not(.top-nav-collapse) {
     background-color: #24355C;
   }
-}
-@media (min-width: 800px) and (max-width: 850px) {
-  .navbar:not(.top-nav-collapse) {
-    background-color: #24355C;
+  @media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+      background-color: #24355C;
+    }
   }
-}
+  @media (min-width: 800px) and (max-width: 850px) {
+    .navbar:not(.top-nav-collapse) {
+      background-color: #24355C;
+    }
+  }
