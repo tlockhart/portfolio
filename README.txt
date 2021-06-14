@@ -2,7 +2,7 @@ Material Design for Bootstrap
 
 Version: MDB Free 4.19.2
 
-Startup:
+Gulp Startup:
 1. Install gulp: https://mdbootstrap.com/education/bootstrap/gulp-installation/
 2. In root directory install gulp: 
     a. npm install gulp@4.19.2 -g
