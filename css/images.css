@@ -1,13 +1,13 @@
 .img-center {
-    text-align: center;
-    margin-bottom: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 /* .block-center {
     margin: 0 auto;
 } */
 .block-left {
-    text-align: left;
-    /* width: 386px; */
+  text-align: left;
+  /* width: 386px; */
 }
 .search-bar {
   border-style: none;
@@ -16,15 +16,24 @@
 }
 
 .desktop-img {
-    border: 1px solid black;
-    opacity: 0.5;
+  border: 1px solid black;
+  opacity: 0.5;
 }
 
 .mag-icon {
-    width: 30px;
-  }
+  width: 30px;
+}
 
-  /* .border1 {
+.search-btn {
+  background-color: #24355c;
+}
+
+.search-btn:active {
+  /* border: 1px solid red; */
+  background-color: #cacaca;
+}
+
+/* .border1 {
     border: 1px solid black;
   }
   .border2{
