@@ -22,14 +22,32 @@ html {
 }
 
 /* Basic styles to align items properly */
-.search-bar {
+.input-container {
+  position: relative;
   display: flex;
   /* justify-content: space-between; */
   height: 36px;
 }
+.search-bar {
+  position: relative;
+  padding-left: 65px;
+}
 
 .search-bar::placeholder {
   text-indent: 50px;
+}
+
+.search-btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 46px;
+  height: 100%;
+  background-color: #ccc;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
 }
 
 .top-nav-collapse {

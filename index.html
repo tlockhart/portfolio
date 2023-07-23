@@ -1249,17 +1249,21 @@
               <div class="col-md-2 mb-md-0 mb-5"></div>
               <div class="col-md-5 mb-md-0 mb-5 search-area px-0">
                 <form class="form-inline">
-                  <div class="form-inline mb-5 search-bar-container">
-                    <button class="search-btn" id="find-item-btn" type="submit">
-                      <img class="mag-icon" src="./img/mag.png" />
-                    </button>
-                    <input
+                  <div class="form-inline mb-5">
+                    <div class="input-container">
+                      <input
                       type="text"
                       class="search-bar"
                       aria-label="Search"
                       placeholder="Item Search"
                       id="search"
-                    /><div class="response-msg"></div>
+                    />
+                    <button class="search-btn" id="find-item-btn" type="submit">
+                        <img class="mag-icon" src="./img/mag.png" alt="magnifying glass"/>
+                      </button>
+                    </div>
+                    
+                    <div class="response-msg"></div>
                   </div>
                 </form>
               </div>
