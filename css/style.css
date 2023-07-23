@@ -21,6 +21,17 @@ html {
   border-radius: 50%;
 }
 
+/* Basic styles to align items properly */
+.search-bar {
+  display: flex;
+  /* justify-content: space-between; */
+  height: 36px;
+}
+
+.search-bar::placeholder {
+  text-indent: 50px;
+}
+
 .top-nav-collapse {
     background-color: #24355C;
   }
