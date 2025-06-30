@@ -39,3 +39,10 @@
   .border2{
     border: 1px solid red;
   } */
+
+  .artango-img {
+  display: block;
+  width: 100%;
+  height: 1%; /* ensures it scales proportionally with width */
+  /* max-height: 100%; prevents overflow in container */
+}
