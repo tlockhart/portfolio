@@ -471,54 +471,28 @@
 
           <!--Grid row-->
           <div class="row">
+                        
             <!--Grid column-->
             <div class="col-lg-4 col-md-12 mb-4">
               <div class="view overlay z-depth-1-half">
-                <img src="./img/spidey-click.png" class="img-fluid" />
+                <img src="./img/restaurant_recommender.png" class="img-fluid" />
                 <a
                   target="_blank"
-                  href="https://tlockhart.github.io/spidey-click/"
+                  href="https://frontend-proud-tree-7628.fly.dev/"
                 >
                   <div class="mask rgba-white-slight"></div>
                 </a>
               </div>
               <!--view-->
 
-              <h4 class="my-4 font-weight-bold">Spidey-Click</h4>
+              <h4 class="my-4 font-weight-bold">Restaurant Finder</h4>
               <p class="grey-text comment-small">
-                This project is a simple memory game. Players earn points by
-                clicking an image of a Spidey character. The game ends when a
-                player clicks a character more than once. Please visit my gitHub
-                repo for more details<a
+                This project is a Google Gemini restaurant recommendation 
+                system. The goal is to help users discover local restaurants 
+                that match their mood. Please visit my GitHub repo for 
+                more details<a
                   target="_blank"
-                  href="https://github.com/tlockhart/spidey-click"
-                >
-                  <i aria-hidden="true" class="fa fa-github"></i> </a
-                >.
-              </p>
-            </div>
-            <!--Grid column-->
-            <!--Grid column-->
-            <div class="col-lg-4 col-md-12 mb-4">
-              <div class="view overlay z-depth-1-half">
-                <img src="./img/readinglist.png" class="img-fluid" />
-                <a
-                  target="_blank"
-                  href="https://reading-list-frontend.onrender.com"
-                >
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <!--view-->
-
-              <h4 class="my-4 font-weight-bold">Book-Search</h4>
-              <p class="grey-text comment-small">
-                This project is a Google book search application. It allows
-                users to search the Google Books API by title, save books to a
-                database, view book details, and preview the books. Please visit
-                my gitHub repo for more details<a
-                  target="_blank"
-                  href="https://github.com/tlockhart/reading-list"
+                  href="https://github.com/tlockhart/restaurant_recommendation/"
                 >
                   <i aria-hidden="true" class="fa fa-github"></i> </a
                 >.
@@ -581,6 +555,32 @@
             </div>
             <!--Grid column -->
 
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-12 mb-4">
+              <div class="view overlay z-depth-1-half">
+                <img src="./img/readinglist.png" class="img-fluid" />
+                <a
+                  target="_blank"
+                  href="https://reading-list-frontend.onrender.com"
+                >
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <!--view-->
+
+              <h4 class="my-4 font-weight-bold">Book-Search</h4>
+              <p class="grey-text comment-small">
+                This project is a Google book search application. It allows
+                users to search the Google Books API by title, save books to a
+                database, view book details, and preview the books. Please visit
+                my gitHub repo for more details<a
+                  target="_blank"
+                  href="https://github.com/tlockhart/reading-list"
+                >
+                  <i aria-hidden="true" class="fa fa-github"></i> </a
+                >.
+              </p>
+            </div>
             <!--Grid column-->
           </div>
           <!--row-->
@@ -837,6 +837,33 @@
           </div>
           <!--Grid row-->
           <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-12 mb-4">
+              <div class="view overlay z-depth-1-half">
+                <img src="./img/spidey-click.png" class="img-fluid" />
+                <a
+                  target="_blank"
+                  href="https://tlockhart.github.io/spidey-click/"
+                >
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <!--view-->
+
+              <h4 class="my-4 font-weight-bold">Spidey-Click</h4>
+              <p class="grey-text comment-small">
+                This project is a simple memory game. Players earn points by
+                clicking an image of a Spidey character. The game ends when a
+                player clicks a character more than once. Please visit my gitHub
+                repo for more details<a
+                  target="_blank"
+                  href="https://github.com/tlockhart/spidey-click"
+                >
+                  <i aria-hidden="true" class="fa fa-github"></i> </a
+                >.
+              </p>
+            </div>
+            <!--Grid column-->
             <!--Grid row-->
 
             <!--Grid column 1-->
@@ -1383,6 +1410,7 @@
                         <input
                           type="text"
                           id="contact-name"
+                          name="name"
                           class="form-control"
                         />
                         <label for="contact-name" class="">Your name</label>
@@ -1396,6 +1424,7 @@
                         <input
                           type="text"
                           id="contact-email"
+                          name="email"
                           class="form-control"
                         />
                         <label for="contact-email" class="">Your email</label>
@@ -1413,6 +1442,7 @@
                         <input
                           type="text"
                           id="contact-Subject"
+                          name="subject"
                           class="form-control"
                         />
                         <label for="contact-Subject" class="">Subject</label>
@@ -1429,6 +1459,7 @@
                       <div class="md-form">
                         <textarea
                           id="contact-message"
+                          name="message"
                           class="form-control md-textarea"
                           rows="3"
                         ></textarea>
@@ -1440,14 +1471,27 @@
                   <!-- Grid row -->
 
                   <div class="text-center text-md-left">
-                    <!--a class="btn btn-primary btn-md">Send</a-->
-                    <input
-                      type="submit"
+                    <button
+                      type="button"
                       class="btn btn-primary btn-md"
-                      value="SEND"
-                    />
+                      onclick="sendEmail()"
+                    >
+                      SEND
+                    </button>
                   </div>
                 </form>
+
+                <script>
+                function sendEmail() {
+                  const name = document.getElementById('contact-name').value;
+                  const email = document.getElementById('contact-email').value;
+                  const subject = document.getElementById('contact-Subject').value;
+                  const message = document.getElementById('contact-message').value;
+                  
+                  const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0A${message}`;
+                  window.location.href = `mailto:tony.lockhart@ymail.com?subject=${subject}&body=${body}`;
+                }
+                </script>
               </div>
               <!-- Grid column -->
 
